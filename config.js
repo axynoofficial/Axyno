@@ -204,10 +204,8 @@ const AXYNO_CONFIG = {
       "Other / Custom Inquiry"
     ],
     budgetRanges: [
-      "Under ₹50,000",
-      "₹50,000 – ₹1,50,000",
-      "₹1,50,000 – ₹3,00,000",
-      "₹3,00,000+",
+      "Under ₹500",
+      "₹500 – ₹1000",
       "Undecided / Flexible"
     ]
   },
