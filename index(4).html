@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  
+  <!-- Primary Meta Tags -->
+  <title>Axyno — Ideas. Built Better.</title>
+  <meta name="title" content="Axyno — Ideas. Built Better.">
+  <meta name="description" content="Axyno creates modern digital products, websites, and creative technology solutions for brands who refuse to look ordinary.">
+  <meta name="theme-color" content="#070605">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/axyno-app-icon.png">
+  <link rel="apple-touch-icon" href="assets/axyno-app-icon.png">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Axyno — Ideas. Built Better.">
+  <meta property="og:description" content="Axyno creates modern digital products, websites, and creative technology solutions.">
+  <meta property="og:image" content="assets/axyno-logo-full.png">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Axyno — Ideas. Built Better.">
+  <meta property="twitter:description" content="Axyno creates modern digital products, websites, and creative technology solutions.">
+  <meta property="twitter:image" content="assets/axyno-logo-full.png">
+
+  <!-- Preconnect Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Accessibility Skip Link -->
+  <a href="#mainContent" class="skip-to-content">Skip to content</a>
+
+  <!-- Interactive Cursor Ambient Glow -->
+  <div class="ambient-glow" id="ambientGlow" aria-hidden="true"></div>
+
+  <!-- ==============================================================================
+       1. LOGO INTRO / OPENING ANIMATION OVERLAY
+       ============================================================================== -->
+  <aside id="introOverlay" aria-label="Brand Intro Animation" role="dialog" aria-modal="true">
+    <div class="intro-video-container" id="introVideoContainer">
+      <!-- Video injected dynamically by script.js from AXYNO_CONFIG.introAnimation.videoUrl -->
+    </div>
+    
+    <!-- CSS Fallback (active if videoUrl is null or video is skipped) -->
+    <div class="intro-fallback" id="introFallbackContainer">
+      <div class="intro-fallback-icon">
+        <img src="assets/axyno-icon-3d.png" alt="Axyno Monogram">
+        <div class="intro-fallback-sweep"></div>
+      </div>
+      <div class="intro-fallback-wordmark">
+        <img src="assets/axyno-wordmark.png" alt="Axyno">
+      </div>
+    </div>
+
+    <button type="button" class="intro-skip-btn" id="skipIntroBtn" aria-label="Skip Intro Animation">
+      Skip [ESC]
+    </button>
+  </aside>
+
+  <!-- ==============================================================================
+       2. STICKY NAVIGATION
+       ============================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand" aria-label="Axyno Home">
+        <img src="assets/axyno-icon-3d.png" alt="Axyno Icon" class="nav-brand-icon">
+        <img src="assets/axyno-wordmark.png" alt="Axyno Wordmark" class="nav-brand-wordmark">
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#works" class="nav-link">Works</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Desktop CTA -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary">Start a Project</a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button type="button" class="nav-hamburger" id="navHamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
+    <a href="#home" class="mobile-nav-link">Home</a>
+    <a href="#works" class="mobile-nav-link">Works</a>
+    <a href="#services" class="mobile-nav-link">Services</a>
+    <a href="#pricing" class="mobile-nav-link">Pricing</a>
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+    <a href="#contact" class="btn btn-primary">Start a Project</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="mainContent">
+
+    <!-- ==============================================================================
+         3. HERO SECTION
+         ============================================================================== -->
+    <section class="section hero-section" id="home">
+      <div class="hero-bg-effect" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow">Digital Product &amp; Creative Technology Studio</span>
+          <h1 class="hero-headline">Ideas.<br>Built <em>Better.</em></h1>
+          <p class="hero-desc">
+            Axyno creates modern digital products, websites, and creative technology solutions for founders and brands who refuse to look ordinary.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#works" class="btn btn-primary">
+              View Our Works
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-ghost">Start a Project</a>
+          </div>
+        </div>
+
+        <div class="hero-showcase">
+          <div class="hero-badge-card">
+            <div class="hero-emblem-wrapper">
+              <img src="assets/axyno-icon-3d.png" alt="Axyno 3D Monogram">
+            </div>
+            <div class="hero-stats-row">
+              <div class="hero-stat-item">
+                <div class="hero-stat-num">5</div>
+                <div class="hero-stat-desc">Works Done</div>
+              </div>
+              <div class="hero-stat-item">
+                <div class="hero-stat-num">2026</div>
+                <div class="hero-stat-desc">Founded</div>
+              </div>
+              <div class="hero-stat-item">
+                <div class="hero-stat-num">99%</div>
+                <div class="hero-stat-desc">Satisfaction</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         4. WORKS / PROJECTS SECTION
+         ============================================================================== -->
+    <section class="section" id="works">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Selected Works</span>
+          <h2 class="section-title">Recent projects</h2>
+          <p class="section-desc">A curated collection of digital products, design systems, and platforms crafted with precision.</p>
+        </div>
+        
+        <!-- Data-driven project cards populated by script.js -->
+        <div class="works-grid" id="worksGrid"></div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         5. SERVICES SECTION
+         ============================================================================== -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Capabilities</span>
+          <h2 class="section-title">What we build</h2>
+          <p class="section-desc">From initial problem discovery to production-ready digital architectures that scale.</p>
+        </div>
+
+        <!-- Data-driven services rows populated by script.js -->
+        <div class="services-list" id="servicesList"></div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         6. PRICING SECTION
+         ============================================================================== -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Investment</span>
+          <h2 class="section-title">Transparent plans</h2>
+          <p class="section-desc">Simple pricing for the services we currently offer. Custom requirements can be discussed.</p>
+        </div>
+
+        <!-- Data-driven pricing cards populated by script.js -->
+        <div class="pricing-grid" id="pricingGrid"></div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         7. ABOUT AXYNO SECTION
+         ============================================================================== -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <span class="eyebrow">About Axyno</span>
+          <h2 class="about-headline">Building Ideas Into Reality.</h2>
+          <p class="about-story">
+            Axyno is a premium digital and creative technology brand focused on innovation, technology, creativity, and future-ready solutions.
+          </p>
+          <p class="about-story">
+            We explore practical digital solutions that combine creativity, technology, and a future-ready mindset.
+          </p>
+
+          <div class="about-philosophy-card">
+            <p class="about-philosophy-quote">“Good ideas deserve to be built well.”</p>
+            <p class="about-philosophy-desc">
+              We don't just build something because it can be built. We first understand the problem, find a better approach, and then turn the idea into a practical digital experience.
+            </p>
+          </div>
+
+          <!-- Three Highlights: Think, Create, Build -->
+          <div class="about-highlights" id="aboutHighlights"></div>
+        </div>
+
+        <div class="about-visual">
+          <div class="about-aura" aria-hidden="true"></div>
+          <div class="about-emblem-card">
+            <img src="assets/axyno-icon-3d.png" alt="Axyno 3D Monogram">
+            <p>Ideas for a better tomorrow</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         8. CTA SECTION
+         ============================================================================== -->
+    <section class="section cta-section" id="cta">
+      <div class="container">
+        <div class="cta-box">
+          <span class="eyebrow">Start Today</span>
+          <h2 class="cta-headline">Have an idea?<br>Let's build it.</h2>
+          <p class="cta-sub">Whether you have an early concept or a full product roadmap, we're ready to engineer it into reality.</p>
+          <a href="#contact" class="btn btn-primary">
+            Start a Project
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         9. CONTACT SECTION
+         ============================================================================== -->
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info-panel">
+          <span class="eyebrow">Get In Touch</span>
+          <h2>Tell us about your project</h2>
+          <p>Tell us what you're building. Tell us what you need, and we can discuss the project, scope, and pricing.</p>
+
+          <div class="contact-details-list">
+            <dl class="contact-detail-item">
+              <dt>Direct Email</dt>
+              <dd id="contactDisplayEmail">axynoofficial@gmail.com</dd>
+            </dl>
+            <dl class="contact-detail-item">
+              <dt>Headquarters</dt>
+              <dd id="contactDisplayLocation"></dd>
+            </dl>
+          </div>
+
+          <div class="contact-social-row" id="contactSocialRow"></div>
+        </div>
+
+        <div class="contact-form-card">
+          <form id="contactForm" novalidate>
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="contactName">Your Name *</label>
+                <input type="text" id="contactName" name="name" class="form-control" placeholder="Jane Doe" required autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Email Address *</label>
+                <input type="email" id="contactEmail" name="email" class="form-control" placeholder="jane@example.com" required autocomplete="email">
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="contactProjectType">Project Type</label>
+                <select id="contactProjectType" name="projectType" class="form-control">
+                  <!-- Populated from config -->
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contactBudget">Anticipated Budget</label>
+                <select id="contactBudget" name="budget" class="form-control">
+                  <!-- Populated from config -->
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Project Overview &amp; Goals *</label>
+              <textarea id="contactMessage" name="message" class="form-control" placeholder="Share a few details about what you'd like to build..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              Send Message
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+
+            <p class="form-status-msg" id="contactStatusMsg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==============================================================================
+       10. FOOTER
+       ============================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main-grid">
+        <div class="footer-brand-wrap">
+          <div class="footer-brand-logo">
+            <img src="assets/axyno-icon-3d.png" alt="Axyno Icon" style="height: 32px; width: auto;">
+            <img src="assets/axyno-wordmark.png" alt="Axyno Wordmark" style="height: 18px; width: auto;">
+          </div>
+          <p class="footer-brand-desc">
+            Ideas for a better tomorrow — a digital product and creative technology studio combining design, code, and vision.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links-list" id="footerServicesList">
+            <!-- Populated from config -->
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Social</h4>
+          <ul class="footer-links-list" id="footerSocialsList">
+            <!-- Populated from config -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; <span id="footerYear"></span> Axyno. All rights reserved.</span>
+        <div class="footer-legal-links">
+          <button type="button" data-legal="privacy">Privacy Policy</button>
+          <button type="button" data-legal="terms">Terms of Service</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==============================================================================
+       PROJECT MODAL DIALOG (<dialog>)
+       ============================================================================== -->
+  <dialog class="project-dialog" id="projectModal" aria-labelledby="modalTitle">
+    <div class="modal-media">
+      <img id="modalProjectImg" src="" alt="Project Showcase">
+      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+    </div>
+    <div class="modal-content-body">
+      <div class="modal-meta-row">
+        <span id="modalCategory"></span>
+      </div>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <p class="modal-overview" id="modalOverview"></p>
+      
+      <div class="modal-tags" id="modalTags"></div>
+
+      <div class="modal-deliverables">
+        <h4>Key Deliverables</h4>
+        <ul id="modalDeliverablesList"></ul>
+      </div>
+
+      <a href="#contact" class="btn btn-primary" onclick="closeProjectModal()">
+        Build Something Similar
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </dialog>
+
+  <!-- ==============================================================================
+       LEGAL DIALOG (<dialog>)
+       ============================================================================== -->
+  <dialog class="project-dialog" id="legalModal" aria-labelledby="legalModalTitle" style="max-width: 600px;">
+    <div class="modal-content-body" style="padding-top: 36px; position: relative;">
+      <button type="button" class="modal-close-btn" id="legalModalCloseBtn" aria-label="Close legal modal">&times;</button>
+      <h3 class="modal-title" id="legalModalTitle" style="margin-bottom: 1.2rem;"></h3>
+      <p class="modal-overview" id="legalModalContent" style="margin-bottom: 2rem;"></p>
+      <button type="button" class="btn btn-primary" onclick="document.getElementById('legalModal').close()">Close</button>
+    </div>
+  </dialog>
+
+  <!-- Scripts -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
