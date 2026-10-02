@@ -290,8 +290,8 @@ function renderPricing() {
       const planName = btn.getAttribute('data-plan');
       const budgetSelect = document.getElementById('contactBudget');
       if (budgetSelect) {
-        if (planName.toUpperCase().includes('WEDDING')) budgetSelect.value = "Under ₹50,000";
-        else if (planName.toUpperCase().includes('POSTER')) budgetSelect.value = "Under ₹50,000";
+        if (planName.toUpperCase().includes('WEDDING')) budgetSelect.value = "Under ₹500";
+        else if (planName.toUpperCase().includes('POSTER')) budgetSelect.value = "Under ₹500";
         else budgetSelect.value = "Undecided / Flexible";
       }
     });
